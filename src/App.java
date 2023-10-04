@@ -12,8 +12,15 @@ public class App {
         Employee e = new Employee();
         Person p = new Person();
 
-
-
+        
     }
 
+    private class Test {
+        int count ;
+        public Test(int count){
+            this.count = count;
+        }
+
+    }
 }
+

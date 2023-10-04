@@ -1,5 +1,7 @@
 package DesignPattern.command;
 
-public class email {
-    
-}
+public class Email {
+    public void sendEmail(){
+        System.out.println("send email");
+    }
+}   

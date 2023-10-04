@@ -3,9 +3,9 @@ package DesignPattern.strategy2;
 public class ZipCompressionStrategy implements CompressionStrategy{
 
     @Override
-    public String compress() {
-        // TODO Auto-generated method stub
-        return null;
+    public String compress(final String data) {
+        System.out.println("Compressing using zip sdk");
+        return data;
     }
     
 }
