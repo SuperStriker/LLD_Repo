@@ -7,7 +7,7 @@ public class Leaderboard {
     
     private  String leaderboardId;
     private  String name;
-    List<TollBooth> tboothlist ;
+    private List<TollBooth> tboothlist ;
 
     public Leaderboard(String id,String name){
 
@@ -21,13 +21,19 @@ public class Leaderboard {
         this.tboothlist.add(tb);
     }
 
-    public void removefromTollbooth(TollBooth tb){
+    public void removefromleaderboard(TollBooth tb){
         this.tboothlist.remove(tb);
     }
 
     public void listTollbooths(){
         for( TollBooth tb : this.tboothlist){
             System.out.println(tb.getTolladdress());
+        }
+    }
+
+     public void listtheTolls(){
+        for( TollBooth tb : this.tboothlist){
+            System.out.println(tb.getTollname());
         }
     }
 

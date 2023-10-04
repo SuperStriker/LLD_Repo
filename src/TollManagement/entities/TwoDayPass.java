@@ -1,6 +1,7 @@
 package TollManagement.entities;
 
 import TollManagement.configs.*;
+import TollManagement.enums.Passtype;
 
 public class TwoDayPass extends Pass{
     
@@ -8,8 +9,8 @@ public class TwoDayPass extends Pass{
 
     }
 
-    public TwoDayPass(Vehicle vehicle, TollBooth tbooth, Toll toll1){
-        super(vehicle,tbooth,toll1);
+    public TwoDayPass(Vehicle vehicle, TollBooth tbooth, Toll toll1,Passtype passtype){
+        super(vehicle,tbooth,toll1,passtype);
         this.test = "ga";
         
     }
